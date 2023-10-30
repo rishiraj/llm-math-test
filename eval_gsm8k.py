@@ -127,7 +127,7 @@ def parse_args():
     parser.add_argument("--start", type=int, default=0) #start index
     parser.add_argument("--end", type=int, default=MAX_INT)  # end index
     parser.add_argument("--batch_size", type=int, default=400)  # batch_size
-    parser.add_argument("--tensor_parallel_size", type=int, default=8)  # tensor_parallel_size
+    parser.add_argument("--tensor_parallel_size", type=int, default=1)  # tensor_parallel_size
     return parser.parse_args()
 if __name__ == "__main__":
     args = parse_args()
